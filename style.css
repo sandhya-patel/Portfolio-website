@@ -71,8 +71,8 @@ cursor: pointer;
     justify-content: right;
     align-items:end; 
     text-decoration: none;
-    margin-top: 40px;
-    margin-right: 250px;
+    margin-top: 60px;
+    /* margin-right: 250px; */
     margin-bottom: 40px;
    
 
@@ -115,6 +115,12 @@ div img{
 .info{
     margin-top: 25px;
     color: whitesmoke;
+   
+}
+.new{
+     display: flex;
+    align-items: center;
+    justify-content: center;
     
 }
 
@@ -132,7 +138,7 @@ div h3{
     
     
 }
-#about div{
+#about {
     background-color: rgb(48, 46, 46);
     padding: 2px 100px 45px 100px;
     margin-left: -20px;
@@ -174,19 +180,23 @@ div h3{
 .image img {
     width: 70px;
     height: 70px;
+  
  
 }
 .image  {
-    margin-left: 180px;
+    /* margin-left: 180px; */
+      display: block;
+    align-items: center;
+    justify-content: center;
    
 }
 .image  span{
 
-    margin-left: 250px;
+    /* margin-left: 250px; */
 }
 .image b{
  
-      margin-left: 240px;
+      /* margin-left: 240px; */
      
   }
   .project img{
@@ -203,12 +213,151 @@ div h3{
 
   #contact a{
     color: whitesmoke;
-     margin-left: 700px;
+    /* margin-left: 700px; */
+    display: flex;
+    text-align: center;
+    justify-content: center;
     text-decoration: none;
     list-style: none;
     margin-top: 30px;
 
   }
+
+  /* Tablets (≥768px) */
+@media screen and (min-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .navbar a {
+        display: inline-block;
+        margin: 0 10px;
+    }
+
+    .updwon {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: left;
+    }
+
+    .updwon > div {
+        flex: 1 1 45%;
+        padding: 20px;
+    }
+
+    .project {
+        display: flex;
+        align-items: center;
+        text-align: left;
+        gap: 20px;
+    }
+
+    .project img {
+        max-width: 250px;
+        margin-right: 20px;
+    }
+
+    .info h3 {
+        font-size: 22px;
+    }
+
+    #logo {
+        font-size: 28px;
+    }
+
+    .image {
+        justify-content: center;
+    }
+
+    .image img {
+        width: 60px;
+    }
+}
+
+/* Desktops (≥1024px) */
+@media screen and (min-width: 1024px) {
+    .navbar {
+        padding: 15px 30px;
+    }
+
+    .navbar a {
+        font-size: 18px;
+    }
+
+    .updwon {
+        padding: 40px 60px;
+    }
+
+    .project img {
+        max-width: 300px;
+    }
+
+    .heading {
+        font-size: 32px;
+    }
+
+    .project h1 {
+        font-size: 30px;
+    }
+
+    .info h3 {
+        font-size: 26px;
+    }
+
+    #contact a {
+        font-size: 18px;
+    }
+
+    .image img {
+        width: 70px;
+    }
+}
+
+/* Phones (≤480px) */
+@media screen and (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        display: block;
+        margin: 8px 0;
+    }
+
+    .updwon {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .project {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project img {
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    .image img {
+        width: 40px;
+    }
+
+    .info h3 {
+        font-size: 18px;
+    }
+
+    .heading {
+        font-size: 22px;
+    }
+}
+
   
   
   
